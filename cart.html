@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1938f1a8f2.js" crossorigin="anonymous"></script>
+
+    <!-- Some External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jQuery.css">
+
+    <!-- The JQuery Link sourced from: https://developers.google.com/speed/libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+</head>
+
+<body>
+    <!--*************************************************************||THE HEAD SECTION||************************************************-->
+    <!--The Sticky nav bar with a light background, sticks to its position on the screen and becomes vertical on small screens -->
+    <nav id="mid" class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+        <ul class="navbar-nav">
+            <!--Attribute creates a full-height and lightweight navigation bar-->
+            <!--The Links-->
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <!--assign .nav-item attributes to <li> and .nav-link to <a> because a <nav> based navigation is being used-->
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+            <li class="nav-item">
+                <a class="nav-link active" href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>Cart<span id="count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--****************************************************||THE CART SECTION||**************************************************-->
+    <div class="container">
+        <div class="head-content">
+            <h1 id="animateH1">Welcome To Your Cart</h1>
+            <!-- ============================================The Accordion Drop-Down Menus====================================== -->
+            <!-- div.accordion is created to contain all the elements of the 2 drop down menus. Each section 
+        will be contained in the div.a_item and have a div.a_content that will be hidden in the jQuery css file-->
+            <div class="accordion">
+                <!-- =============First Section with table for delivery options ======================-->
+                <div class="a_item">
+                    <h1 class="a_title">Please Choose A Delivery Option</h1>
+                    <div class="a_content">
+                        <!-- Table will have radio buttons to select only one option -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Price</th>
+                                    <th>Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Collect</td>
+                                    <td>R20</td>
+                                    <td><input type="radio" id="Collect" name="editList" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Working days: Between 8am & 5pm </td>
+                                    <td>R80</td>
+                                    <td><input type="radio" id="Work-Days" name="editList" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Weekends: Between 8am & 5pm </td>
+                                    <td>R120</td>
+                                    <td><input type="radio" id="Weekends" name="editList" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Following Day Delivery</td>
+                                    <td>R240</td>
+                                    <td><input type="radio" id="Following-Day" name="editList" /></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- When button is clicked the function below is computed-->
+                                    <td><button onclick="addDelivery()" id="delivery">Confirm</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <!-- =============Second Section with form for coupon options ======================-->
+                <div class="a_item">
+                    <h1 class="a_title">Enter Coupon Code: ("OFF10")</h1>
+                    <div class="a_content">
+                        <form>
+                            <label class="a_form">
+                                <input type="text" name="coupon" id="code" class="coupon" title="Enter coupon">
+                            </label>
+                            <!-- When button is clicked the function below is computed-->
+                            <input type="button" value="Submit" onclick="checkCoupon()" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================The Cart====================================== -->
+    <div class="cart-container">
+        <h3>Cart</h3>
+        <!-- Container heading section -->
+        <div class="item-header">
+            <!-- template for the placement of elements which will be generated in store.js -->
+            <h4 class="itemTitle">Item</h4>
+            <h4 class="price">Price</h4>
+            <h4 class="quantity">Quantity</h4>
+            <h4 class="total"><b>Total</b></h4>
+        </div>
+        <!-- Where the JS computed cart elements and total will be placed under -->
+        <div class="produceItems">
+        </div>
+        <!-- Where the JS computed cart buttons will be placed under -->
+        <div class="order">
+        </div>
+    </div>
+    <!--**********************************************************||THE FOOTER||*************************************************************-->
+    <hr>
+    <footer class=footer>
+        <p>Created By Lerato Mokgwabona</p>
+        <p>All images are derived from: <a href=https://depositphotos.com/home.html
+                target="_blank">https://depositphotos.com/home.html </a> and are on the public domain</p>
+    </footer>
+
+    <!-- JS scripts -->
+    <script src="js/store.js"></script>
+    <script src="js/jQuery.js"></script>
+</body>
+
+</html>

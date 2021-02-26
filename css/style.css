@@ -1,0 +1,430 @@
+/* *********************************************||BASIC STYLING||*********************************************/
+:root {
+    --primary-color: #2d8782;
+    --secondary-color: #46c1bd;
+    --dark-color: #113034;
+}
+
+/*Setting out my color template with the custom variant and will be called using "var(--)"*/
+
+* {
+    box-sizing: border-box;
+    /*The box-sizing property allows the padding and border to be included in all the element's total width and height.*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--dark-color);
+    color: white;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+
+h1 {
+    font-weight: 700;
+    /*change thickness*/
+    font-family: Verdana;
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 0 0 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+
+h2 {
+    font-weight: 300;
+    /*change thickness*/
+    font-size: 40px;
+    line-height: 1.5;
+    /*1.5 will be multiplied with the current font-size (32px) to set the line height*/
+    margin: 0 0 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 1.5;
+    /*1.5 will be multiplied with the current font-size (32px) to set the line height*/
+    margin: 0 0 32px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /*I want to remove all text decorations for links*/
+}
+
+a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*All links will have text change to the secondary colour and the font family style set to Arial in the 
+body tag's css styling*/
+
+p {
+    margin: 8px 0;
+    color: white;
+}
+
+img {
+    border: 1px solid var(--secondary-color);
+    filter: contrast(120%);
+    /*filter to all images added to increase the contrast to 120%*/
+    transition: transform .5s;
+    /* The animation speed is set to 0.5 seconds*/
+    width: 100%;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /*images are set to zoom at 110%*/
+}
+
+hr {
+    background: var(--secondary-color);
+}
+
+/*text styles*/
+.text-lg {
+    font-size: 28px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.text-md {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.text-s {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
+/* *********************************************||HEAD SECTION||********************************************* */
+.head {
+    width: 100%;
+    height: 100vh;
+    /*viewport height/ height of window*/
+    position: relative;
+    /*Will be positioning many elements absolute*/
+    background: url('images-home/background.jpg') no-repeat center center/cover;
+}
+
+
+/*Use pseudo class to add ghost element to style and change opacity of image*/
+.head:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*layers it on top of everything*/
+    background: rgba(0, 0, 0, 0.5);
+    /*rgba creates 50% transparent colour*/
+    box-shadow: inset 120px 100px 250px black, inset -120px -100px 250px black;
+    /*adds to left and top/ then right and bottom*/
+}
+
+.head-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.head-top img {
+    width: 170px;
+    position: absolute;
+    /*positioning it inside closest parent element that has position relative (showcase-top) */
+    top: 50%;
+    left: 50%;
+    /*not centered properly use transform*/
+    transform: translate(-50%, -50%);
+    /* help top and left settings: height and length included in the 50%s - transform minuses the height and width of images from positioning*/
+}
+
+.head-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.head-content {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    /*puts everything into row so use flex direction to change to column*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*moves everything to the center*/
+    text-align: center;
+    margin-top: 200px;
+    /*move content a bit down*/
+}
+
+/* *********************************************||NAVBAR SECTION||*********************************************/
+a.active,
+a:hover {
+    border: 2px solid var(--secondary-color);
+    transition: .4s;
+}
+
+/* *********************************************||MID SECTION||*********************************************/
+
+.middle {
+    max-width: 75%;
+    margin: 50px auto;
+    overflow: hidden;
+    /*lets everything stay in the container*/
+    padding: 0 32px;
+    height: 150vh;
+}
+
+.row {
+    margin: 30px 0;
+    padding: 2px;
+}
+
+/*fixed dimensions set for images*/
+.img-fluid {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*---------------------------------------------Drop down Menu*/
+.more {
+    margin-top: 0;
+    background: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    /*cursor to pointer when hovering over block*/
+}
+
+.dropdownlst li {
+    position: relative;
+}
+
+.dropdownlst li p:hover {
+    color: var(--secondary-color);
+}
+
+/*display set to none to make it invisible when the */
+.dropdownlst li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.171);
+    /*invisisble background*/
+    border-radius: 0 0 5px 5px;
+    /*I want only the bottom corners to have a radius*/
+}
+
+.dropdownlst li:hover ul {
+    display: block;
+}
+
+/*setting out styling for the drop down list items*/
+.dropdownlst li ul li {
+    margin-top: 0;
+    padding: 0px 8px;
+    width: 255px;
+}
+
+/* *********************************************||FOOTER SECTION||*********************************************/
+.footer {
+    text-align: center;
+    width: 100%;
+    margin: 16px auto;
+    overflow: auto;
+}
+
+/* *********************************************||UTILITIES||*********************************************/
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 6px 16px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    outline: none;
+    box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.5);
+    /*Transparency set to 0.5*/
+    border-radius: 2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    color: var(--secondary-color);
+}
+
+.btn-xl {
+    font-size: 32px;
+    padding: 8px 32px;
+    text-transform: uppercase;
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    float: right;
+    margin: 0;
+
+}
+
+/* *********************************************||TESTIMONIAL||*********************************************/
+.testimonial {
+    width: 100%;
+    Height: 80vh;
+    margin-left: 8%;
+    overflow: hidden;
+}
+
+
+.testimonial-title {
+    text-align: right;
+    padding: 10px;
+}
+
+.testimonial p {
+    text-align: right;
+    padding: 10px;
+}
+
+.test {
+    background: rgba(255, 255, 255, 0.144);
+    display: inline-block;
+    /*boxes will be displayed in line and not over each other*/
+    float: left;
+    width: 40%;
+    height: 50vh;
+    /*Fixed width for the boxes*/
+    margin-left: 2%;
+}
+
+/* *********************************************||GRADIENT SECTION||*********************************************/
+:root {
+    /*gradient with 60 degree angle*/
+    --gradient: linear-gradient(60deg,
+            black,
+            #113034,
+            #113034,
+            #2d8782);
+}
+
+.gradient-section {
+    font-family: sans-serif;
+    width: 100%;
+    max-height: 200vh;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    /*size needs to be big to display gradient properly*/
+    background-size: 400%;
+    background-image: var(--gradient);
+    animation: bg-animation 30s infinite alternate;
+    /*adding infinite alternate for a smoother transition infinite animation, 
+    running from left to right then right to left at 30 second speed*/
+}
+
+/*Using the @keyframes rule to specify animation code for my background.*/
+@keyframes bg-animation {
+    0% {
+        background-position: left
+    }
+
+    /*the beginning of animation*/
+    100% {
+        background-position: right
+    }
+}
+
+.g-head {
+    width: 100%;
+    height: 50vh;
+    /*viewport height/ height of window*/
+}
+
+.g-content {
+    margin: auto;
+    display: flex;
+    /*puts everything into row so use flex direction to change to column*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*moves everything to the center*/
+    text-align: center;
+    margin-top: 144px;
+    /*move content a bit down*/
+}
+
+/*Heading with gradient color effect and font family style set to verdana font*/
+.g-content h1 {
+    font-weight: 700;
+    /*change thickness*/
+    font-size: 60px;
+    font-family: Verdana;
+    line-height: 1.8;
+    margin: 0 0 32px;
+    background: -webkit-linear-gradient(var(--dark-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    /*clipping text to background (web kit is for CSS features that aren't standardized)*/
+    -webkit-text-fill-color: transparent;
+}
+
+/*the button*/
+.g-button {
+    border: 0;
+    /*styling cursor for button to let user know to click on it*/
+    cursor: pointer;
+    padding: 24px 32px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-image: var(--gradient);
+    /*size needs to be big to display gradient properly*/
+    background-size: 200%;
+    background-position: left;
+    /*background-position used because background image can't be transitioned*/
+    transition: background-position 180ms;
+    /*transition will take 150 milliseconds*/
+}
+
+/*background-position set to right on the hover & focus pseudo classes to change the direction of the gradient 
+when button is hovered over and when clicked*/
+.g-button:hover,
+.g-button:focus {
+    background-position: right;
+    color: var(--dark-color)
+}
+
+/*Button will have text change to the dark colour and the font family style set to sans serif in the 
+.gradient-section class*/

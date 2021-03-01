@@ -8,7 +8,7 @@ $(document).ready(function () {
   $("div.head-content").hover(function animateH1() {
     $("h1#homeH1").animate({
       opacity: '0.1',
-      fontSize: '60px',
+      fontSize: '50px',
     }, 1000).animate({
       opacity: '1',
       fontSize: '80px',

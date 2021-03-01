@@ -11,9 +11,9 @@
 
 <a name="installation"/>  
 
-#### Installation
+## Installation
 
-To install this project navigate the download button as shown in the screetshot below and download the zip folder.
+To install this project navigate the download "code" button as shown in the screetshot below and download the zip folder.
 ![zip](https://user-images.githubusercontent.com/79574031/109512421-c0a5ff80-7aac-11eb-891d-67f9421eaea8.JPG)
 ![extract files](https://user-images.githubusercontent.com/79574031/109513652-02837580-7aae-11eb-9543-c50806f430bc.png)
 ![open on vs code](https://user-images.githubusercontent.com/79574031/109513891-365e9b00-7aae-11eb-8631-ccadf47dbb92.png)
@@ -25,7 +25,7 @@ And Voilà!
 
 <a name="functionality"/>
 
-### Functionality
+## Functionality
 
 #### The Home Page
 
@@ -48,6 +48,6 @@ And Voilà!
 #### About Us
 ![about us](https://user-images.githubusercontent.com/79574031/109508399-7fabec00-7aa8-11eb-8d72-5152367302e9.JPG)
 
-### Credits
+## Credits
 <a name="credits"/>
 And thats all folks:wink:

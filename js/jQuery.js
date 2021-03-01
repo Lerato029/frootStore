@@ -8,10 +8,10 @@ $(document).ready(function () {
   $("div.head-content").hover(function animateH1() {
     $("h1#homeH1").animate({
       opacity: '0.1',
-      fontSize: '30px',
+      fontSize: '40px',
     }, 1000).animate({
       opacity: '1',
-      fontSize: '120px',
+      fontSize: '80px',
     }, 3000), animateH1(); //called back so it runs again
   })
 

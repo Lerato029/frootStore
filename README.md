@@ -6,7 +6,7 @@ The online Froots Store in simple online fruit purchasing platform. It incorpora
 ##### Table of Contents  
 [Installation](#installation)  
 [Functionality](#functionality)  
-[Installation](#redits)  
+[Credits](#credits)  
 
 <a name="installation"/>  
 ## Installation

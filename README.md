@@ -1,7 +1,7 @@
 # frootsStore
 ### The Online Fruits Store :grapes::banana: :lemon: :apple:
 
-** Froots Store in simple online fruit purchasing platform. It incorporates a well structured javascript file for a quick "add to cart" functionality and a good reference for beginers learning javaScript, jQuery, css and html. You can view it using this [link](https://lerato029.github.io/frootsStore/) or download and follow the installation guide on this file. **
+**Froots Store in simple online fruit purchasing platform. It incorporates a well structured javascript file for a quick "add to cart" functionality and a good reference for beginers learning javaScript, jQuery, css and html. You can view it using this [link](https://lerato029.github.io/frootsStore/) or download and follow the installation guide on this file.**
 
 ## Table of Contents  
 

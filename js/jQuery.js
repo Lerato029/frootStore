@@ -11,7 +11,7 @@ $(document).ready(function () {
       fontSize: '30px',
     }, 1000).animate({
       opacity: '1',
-      fontSize: '60px',
+      fontSize: '40px',
     }, 3000), animateH1(); //called back so it runs again
   })
 

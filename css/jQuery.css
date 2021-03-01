@@ -112,7 +112,7 @@ div.a_content {
 /* Cart container hidden and will be called in jQuery function */
 div.cart-container {
     color: white;
-    max-width: 40%;
+    max-width: 70%;
     justify-content: space-around;
     margin: 50px auto;
     background: #2d878244;

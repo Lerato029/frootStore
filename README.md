@@ -11,7 +11,7 @@
 
 <a name="installation"/>  
 
-### Installation
+#### Installation
 
 To install this project navigate the download button as shown in the screetshot below and download the zip folder.
 ![zip](https://user-images.githubusercontent.com/79574031/109512421-c0a5ff80-7aac-11eb-891d-67f9421eaea8.JPG)
@@ -24,15 +24,16 @@ And Voilà!
 
 
 <a name="functionality"/>
-## Functionality
 
-### The Home Page
+### Functionality
+
+#### The Home Page
 
 ![home page](https://user-images.githubusercontent.com/79574031/109508126-2e036180-7aa8-11eb-8af2-23b7a6d1df68.JPG)
 ![Drop down list](https://user-images.githubusercontent.com/79574031/109508184-3d82aa80-7aa8-11eb-90c5-cb3abf623ce7.JPG)
 ![quick add to cart functionality](https://user-images.githubusercontent.com/79574031/109508204-45424f00-7aa8-11eb-88c4-b8416501e797.JPG)
 
-### Welcome To Your Cart :smile:
+#### Welcome To Your Cart :smile:
 
 ![on hover effect](https://user-images.githubusercontent.com/79574031/109508264-59864c00-7aa8-11eb-9e7b-1f84024ac9de.JPG)
 ![cart 2](https://user-images.githubusercontent.com/79574031/109508282-5db26980-7aa8-11eb-8d10-361634c5174a.JPG)
@@ -41,10 +42,10 @@ And Voilà!
 ![cancelled](https://user-images.githubusercontent.com/79574031/109508364-73279380-7aa8-11eb-809b-035a0cde7a3c.JPG)
 ![confirm order](https://user-images.githubusercontent.com/79574031/109508377-76bb1a80-7aa8-11eb-957d-aa44b2c589f3.JPG)
 
-### Contact Page
+#### Contact Page
 ![contact page](https://user-images.githubusercontent.com/79574031/109508391-7cb0fb80-7aa8-11eb-85d5-f3602ebdfffc.JPG)
 
-### About Us
+#### About Us
 ![about us](https://user-images.githubusercontent.com/79574031/109508399-7fabec00-7aa8-11eb-8d72-5152367302e9.JPG)
 
 ### Credits

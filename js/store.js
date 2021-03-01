@@ -292,7 +292,7 @@ function showCart() {
             </div>
             <div class="order">
                 <a href="contact-us.html" class="btn btn-sm" onclick="confirmPurchase()" >Confirm</a>
-                <a href="home.html" style="color:black" class="btn btn-sm" onclick="cancelPurchase()" >Cancel</a>
+                <a href="index.html" style="color:black" class="btn btn-sm" onclick="cancelPurchase()" >Cancel</a>
             </div>`
     } //End of if (produceInCart && cartContainer) if statement                            
 } //End of Show Cart
